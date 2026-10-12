@@ -2,7 +2,7 @@
 
 A free, browser-based save editor for [*Path of the Idle Cultivator*](https://store.steampowered.com/app/5007580/Path_of_the_idle_cultivator/). Load your save, change what you want, and download a file the game will accept.
 
-**[Open the editor](https://statictrace.github.io/Path-of-the-idle-cultivator---Save-Editor/)**
+**[Open the editor](https://statictrace.github.io/Path-of-the-idle-cultivator-Save-Editor/)**
 
 Everything runs locally in your browser. Your save file is never uploaded anywhere, and there is no server, account or tracking.
 
