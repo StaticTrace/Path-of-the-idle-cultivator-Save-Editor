@@ -20,11 +20,11 @@ Everything runs locally in your browser. Your save file is never uploaded anywhe
 
 ## How to use it
 
-1. Find your save file and **make a backup copy**.
+1. Find your save folder and **make a backup copy** of the file you want to edit. On Windows the saves are in `C:\Users\<you>\AppData\Roaming\cultivationjs\saves` (paste `%APPDATA%\cultivationjs\saves` into File Explorer's address bar to get there).
 2. Open the editor and drag your save onto the page (or click *browse*).
 3. Edit values in any tab. Fields that fail validation turn red and are not applied.
-4. Click **Export save**. A file with the same name as the one you loaded is downloaded.
-5. Close the game, replace your save file with the downloaded one, and start the game.
+4. Click **Export save**. A file with the same name as the one you loaded is downloaded. If your Downloads folder already has a file with that name, the browser adds `(1)`; rename it back before using it.
+5. **Close the game**, copy the downloaded file into the saves folder over the original, and start the game. If you use Steam Cloud, pause cloud sync first so it doesn't restore the old save.
 
 If the game rejects the file, restore your backup.
 
@@ -43,8 +43,8 @@ The game's save is `JSON → UTF-8 → XOR with a repeating key → Base64`. The
 No build step and no dependencies. ES modules need HTTP, so don't open `index.html` directly from disk:
 
 ```bash
-git clone https://github.com/StaticTrace/Path-of-the-idle-cultivator---Save-Editor.git
-cd Path-of-the-idle-cultivator---Save-Editor
+git clone https://github.com/StaticTrace/Path-of-the-idle-cultivator-Save-Editor.git
+cd Path-of-the-idle-cultivator-Save-Editor
 python3 -m http.server 8000
 ```
 
